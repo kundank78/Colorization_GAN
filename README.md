@@ -17,7 +17,7 @@ The architecture of generator is inspired by U-Net: The architecture of the mode
 ![alt text](https://github.com/kundank78/Colorization_GAN/blob/master/unet.png)
 For discriminator, we use similar architecture as the baselines contractive path.
 ## Datasets
-We use CIFAR-10 dataset. To train model on fulldataset, Download dataset [here](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
+We use CIFAR-10 dataset. To train model on fulldataset, Download dataset [here].(https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz)
 ## References
-1. Image Colorization using GANs.[Paper](https://arxiv.org/pdf/1803.05400.pdf)
-2. A TensorFlow Implementation.[link](https://github.com/ImagingLab/Colorizing-with-GANs)
+1. Image Colorization using GANs. [Paper](https://arxiv.org/pdf/1803.05400.pdf)
+2. A TensorFlow Implementation of Image Colorization. [Link](https://github.com/ImagingLab/Colorizing-with-GANs)
