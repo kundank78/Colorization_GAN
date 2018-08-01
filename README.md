@@ -8,13 +8,13 @@ Generative Adversarial Networks](https://arxiv.org/pdf/1803.05400.pdf)
 * PyTorch
 ## Method
 In a traditional GAN, the input of the generator is randomly generated noise data z. However, this approach is not applicable to the automatic colorization problem due to the nature of its inputs. The generator must be modified to accept grayscale images as inputs rather than noise. This problem was addressed by using a variant of GAN called conditional generative adversarial networks. Since no noise is introduced, the input of the generator is treated as zero noise with the grayscale input as a prior:
-![alt text](https://github.com/kundank78/Colorization_GAN/blob/master/con_gan.png)
+![alt text](https://github.com/kundank78/Colorization_GAN/blob/master/img/con_gan.png)
 The discriminator gets colored images from both generator and original data along with the grayscale input as the condition and tries to tell which pair contains the true colored image:
-![alt text](https://github.com/kundank78/Colorization_GAN/blob/master/cgan.png)
+![alt text](https://github.com/kundank78/Colorization_GAN/blob/master/img/cgan.png)
 
 ## Network Architecture
 The architecture of generator is inspired by U-Net: The architecture of the model is symmetric, with n encoding units and n decoding units.
-![alt text](https://github.com/kundank78/Colorization_GAN/blob/master/unet.png)
+![alt text](https://github.com/kundank78/Colorization_GAN/blob/master/img/unet.png)
 For discriminator, we use similar architecture as the baselines contractive path.
 ## Datasets
 We use CIFAR-10 dataset. To train model on fulldataset, Download dataset [here](https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz).
