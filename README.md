@@ -8,6 +8,7 @@ Generative Adversarial Networks](https://arxiv.org/pdf/1803.05400.pdf)
 * PyTorch
 ## Method
 In a traditional GAN, the input of the generator is randomly generated noise data z. However, this approach is not applicable to the automatic colorization problem due to the nature of its inputs. The generator must be modified to accept grayscale images as inputs rather than noise. This problem was addressed by using a variant of GAN called conditional generative adversarial networks. Since no noise is introduced, the input of the generator is treated as zero noise with the grayscale input as a prior:
+
 ![alt text](https://github.com/kundank78/Colorization_GAN/blob/master/img/con_gan.png)
 
 
